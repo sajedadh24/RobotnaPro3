@@ -1,0 +1,13 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1> Are you sure to Delete @Model.UserName</h1>
+
+<form method="post">
+    @Html.HiddenFor(x => x.UserId)
+    <input type="submit" value="Sure Delete" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-warning">Cancel</a>
+</form>
+

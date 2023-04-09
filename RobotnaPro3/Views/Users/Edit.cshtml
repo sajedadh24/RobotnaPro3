@@ -1,0 +1,43 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<form method="post">
+    <table class="table table-bordered">
+        <tr>
+            <td><label asp-for="UserId"></label></td>
+            <td><input asp-for="UserId" readonly class="form-control" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="UserName"></label></td>
+            <td><input asp-for="UserName" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Email"></label></td>
+            <td><input asp-for="Email" class="form-control" /></td>
+        <tr>
+            <td><label asp-for="Password"></label></td>
+            <td><input asp-for="Password" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Address"></label></td>
+            <td><input asp-for="Address" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="IsActive"></label></td>
+            <td><input asp-for="IsActive" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:right">
+                <input type="submit" value="save" class="btn btn-success" />
+                <a asp-action="Index" class=" btn btn-danger">Cancel</a>
+            </td>
+        </tr>
+
+
+    </table>
+</form>
+
+

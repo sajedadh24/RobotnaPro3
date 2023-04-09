@@ -1,0 +1,40 @@
+﻿@model User
+@{
+    ViewData["Title"] = "CreatUser";
+}
+
+<h1>CreatUser</h1>
+<form method="post">
+    <table class="table-bordered table-hover">
+        <tr>
+            <td><label asp-for="UserName"></label></td>
+            <td><input asp-action="UserName" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Password"></label></td>
+            <td><input asp-action="Password" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Address"></label></td>
+            <td><input asp-action="Address" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Email"></label></td>
+            <td><input asp-action="Email" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="Gender"></label></td>
+            <td><input asp-action="Gender" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="IsActive"></label></td>
+            <td><input asp-action="IsActive" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:right">
+                <input type="submit" value="save" class="btn-success" />
+                <a asp-action="Index" class=" btn btn-danger"> Cancel</a>
+            </td>
+        </tr>
+    </table>
+</form>
